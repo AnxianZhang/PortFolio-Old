@@ -10,7 +10,7 @@ div{
 .color{
     padding: 0!important;
     height: 915px;
-    /* background-color: red; */
+    background-color: red;
     /* border: black solid 2px; */
 }
 
@@ -20,8 +20,7 @@ div{
 
 #welcome-img{
     /* background-image: url("../img/teriseele.png"); */
-    display: table;
-    position: 300px;
+    top: 300px;
     width: 100px;
     height: 100px;
     border: 2px solid black;
