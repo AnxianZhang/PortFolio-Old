@@ -10,18 +10,14 @@ div{
 .color{
     padding: 0!important;
     height: 915px;
-    background-color: red;
+    /* background-color: red; */
     /* border: black solid 2px; */
+}
+
+p {
+    margin-top: 0;
 }
 
 .gb-rt-color{
     background-color: rgb(58, 218, 240);
-}
-
-#welcome-img{
-    /* background-image: url("../img/teriseele.png"); */
-    top: 300px;
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
 }
