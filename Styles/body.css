@@ -7,17 +7,33 @@ div{
     display: block;
 }
 
-.color{
-    padding: 0!important;
-    height: 915px;
-    /* background-color: red; */
-    /* border: black solid 2px; */
-}
-
 p {
     margin-top: 0;
 }
 
-.gb-rt-color{
-    background-color: rgb(58, 218, 240);
+.box{
+    border: 2px solid red;
+    height: 929px;
+    width: auto;
+}
+
+.bg-color-size{
+    padding: 0!important;
+    height: 929px;
+}
+
+.first-color{
+    background-color: rgb(59, 61, 61);
+}
+
+.second-color{
+    background-color:rgb(245, 245, 245);
+    /* border: black solid 2px; */
+}
+
+#test{
+    border: 2px solid red;
+    height: 500px;
+    width: 400px;
+    margin: 100px auto;
 }
