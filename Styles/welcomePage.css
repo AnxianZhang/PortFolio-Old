@@ -1,15 +1,52 @@
+#presentation-box{
+    border: rebeccapurple solid 2px;
+    width: 80%;
+    padding: 0 20px;
+    margin: 189.5px auto;
+    display: flex;
+}
+
 #self-img{
-    background-image: url("../img/dog.png");
-    background-color: grey;
+    background-image: url("../img/honkai.png");
+    /* background-color: grey; */
     width: 300px;
     height: 400px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 15px 50px 30px;
-    margin: 75px auto;
+    margin: auto;
+    position: absolute;
+    left: 350px;
+    transform: rotate(15deg);
+    z-index: 1;
     /* padding-inline-: 50px; */
 }
 
-#presentation-box{
-    border: rebeccapurple solid 2px;
-    margin: 189.5px 100px;
+#colored-box{
+    width: 300px;
+    height: 400px;
+    /* border: 2px solid black; */
+    border-radius: 15px 50px 30px;
+    background-color: aquamarine;
+    transform: rotate(6deg);
+    z-index: 0;
+}
+
+#welcome-text-box{
+    display: block;
+    border: pink solid 2px;
+    height: 400px;
+    width: 55%;
+    margin: auto;
+    /* float: right; */
+}
+
+#self-img-box{
+    width: 325px;
+    height: 425px;
+    border: 2px aliceblue solid;
+    margin: auto;
+}
+
+#welcome-text-box, #self-image{
+    display: inline-block;
 }
