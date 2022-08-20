@@ -13,9 +13,8 @@
     height: 400px;
     /* border: 2px solid black; */
     border-radius: 15px 50px 30px;
-    margin: auto;
+    margin: 10px 0 0 50px;
     position: absolute;
-    left: 350px;
     transform: rotate(15deg);
     z-index: 1;
     /* padding-inline-: 50px; */
