@@ -4,26 +4,34 @@
     padding: 0 20px;
     margin: 189.5px auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
-#self-img{
-    background-image: url("../img/honkai.png");
-    /* background-color: grey; */
+#div-self-img{
+    /* background-image: url("../img/dog.png"); */
     width: 300px;
     height: 400px;
-    /* border: 2px solid black; */
     border-radius: 15px 50px 30px;
     margin: 10px 0 0 50px;
     position: absolute;
     transform: rotate(15deg);
     z-index: 1;
-    /* padding-inline-: 50px; */
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+#self-img{
+    background-image: url("../img/dog.png");
+    transform: rotate(-15deg);
+    border-radius: 15px 50px 30px;
+    width: 300px;
+    height: 400px;
+    
 }
 
 #colored-box{
     width: 300px;
     height: 400px;
-    /* border: 2px solid black; */
     border-radius: 15px 50px 30px;
     background-color: aquamarine;
     transform: rotate(6deg);
@@ -33,10 +41,8 @@
 #welcome-text-box{
     display: block;
     border: pink solid 2px;
-    height: 400px;
-    width: 55%;
+    width: 60%;
     margin: auto;
-    /* float: right; */
 }
 
 #self-img-box{
@@ -46,6 +52,22 @@
     margin: 0 100px 0 0;
 }
 
-#welcome-text-box, #self-image{
+/* #welcome-text-box, #self-image{
     display: inline-block;
+} */
+
+#contact{
+    width: 500px;
+    height: 50px;
+    border: 2px solid black;
+    margin: 330px 0 0 87px;
+    /* margin: auto; */
+    position: absolute;
+}
+
+.contact-img-size{
+    width: 50px;
+    height: 50px;
+    /* border: yellow 2px solid; */
+    /* border-radius: 50%; */
 }

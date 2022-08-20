@@ -8,18 +8,42 @@ body{
     margin: 0!important;
 }
 
-h1{
+#top-r-menu{
+    float: right;
+    position: sticky;
+    top: 30px;
+    /* border: 2px black solid; */
+    margin: 50px 50px;
+}
+
+#nav-menu{
+    height: 20px;
+    width: auto;
+}
+
+h1, p{
     font-family: 'Roboto';
-    /* text-align: left; */
+}
+
+h1{
+    font-size: 3em;
+    line-height: 100%;
+    font-weight: 80;
+}
+
+p{
+    font-size: 1em;
+    line-height: 100%;
+    font-weight: 100;
 }
 
 div{
     display: block;
 }
 
-p {
+/* p {
     margin-top: 0;
-}
+} */
 
 .box{
     border: 2px solid red;
@@ -33,11 +57,11 @@ p {
 }
 
 .first-color{
-    background-color: rgb(59, 61, 61);
+    background-color: rgb(122, 122, 122);
 }
 
 .second-color{
-    background-color:rgb(245, 245, 245);
+    background-color:rgb(238, 238, 238);
     /* border: black solid 2px; */
 }
 
