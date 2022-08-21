@@ -1,73 +1,75 @@
+#welcom-page{
+    background-image: url("../img/welcome-bg2.png");
+}
+
 #presentation-box{
-    border: rebeccapurple solid 2px;
+    /* border: rebeccapurple solid 2px; */
     width: 80%;
     padding: 0 20px;
-    margin: 189.5px auto;
+    margin: 225px auto;
     display: flex;
     flex-wrap: wrap;
 }
 
 #div-self-img{
-    /* background-image: url("../img/dog.png"); */
     width: 300px;
     height: 400px;
     border-radius: 15px 50px 30px;
     margin: 10px 0 0 50px;
     position: absolute;
     transform: rotate(15deg);
-    z-index: 1;
-    border: 2px solid black;
+    z-index: 2;
+    /* border: 2px solid black; */
     overflow: hidden;
+    filter: drop-shadow(16px 16px 15px rgb(77, 77, 77));
 }
 
-#self-img{
-    background-image: url("../img/dog.png");
-    transform: rotate(-15deg);
+#div-self-img div{
+    transform: rotate(-15deg) translate(-45px, -45px);
     border-radius: 15px 50px 30px;
-    width: 300px;
-    height: 400px;
-    
+    /* border: 2px solid royalblue; */
+    width: 400px;
+    height: 500px;
+}
+
+#div-self-img div img{
+    width: 700px;
+    height: 475px;
+    transform: translate(-150px, 0px);
 }
 
 #colored-box{
     width: 300px;
     height: 400px;
     border-radius: 15px 50px 30px;
-    background-color: aquamarine;
+    background-color: rgb(134, 219, 240);
     transform: rotate(6deg);
     z-index: 0;
+    filter: drop-shadow(16px 16px 15px rgb(77, 77, 77));
 }
 
 #welcome-text-box{
     display: block;
-    border: pink solid 2px;
+    /* border: pink solid 2px; */
     width: 60%;
     margin: auto;
 }
 
 #self-img-box{
-    width: 325px;
-    height: 425px;
-    border: 2px aliceblue solid;
+    width: 300px;
+    height: 400px;
+    /* border: 2px aliceblue solid; */
     margin: 0 100px 0 0;
 }
-
-/* #welcome-text-box, #self-image{
-    display: inline-block;
-} */
 
 #contact{
     width: 500px;
     height: 50px;
-    border: 2px solid black;
-    margin: 330px 0 0 87px;
-    /* margin: auto; */
+    margin: 0px 0 0 87px;
     position: absolute;
 }
 
 .contact-img-size{
     width: 50px;
     height: 50px;
-    /* border: yellow 2px solid; */
-    /* border-radius: 50%; */
 }

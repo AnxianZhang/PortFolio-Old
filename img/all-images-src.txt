@@ -1,2 +1,3 @@
 github: https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU
 nav2: https://www.iconfinder.com/icons/6900258/checklist_detail_list_menu_navigation_option_setting_icon
+welcom-bg*: https://bggenerator.com/poly_background.php
