@@ -3,22 +3,132 @@
     src: url("../Roboto/Roboto-Thin.ttf");
 }
 
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-size: 1em;
     margin: 0!important;
 }
 
-#top-r-menu{
-    float: right;
-    position: sticky;
-    top: 30px;
-    /* border: 2px black solid; */
-    margin: 50px 50px;
+.icon{
+    width: 40px;
+    height: 40px;
 }
 
-#nav-menu{
-    height: 20px;
-    width: auto;
+#menu-box{
+    float: right;
+    position: sticky;
+    width: 100px;
+    height: 100px;
+    top: 30px;
+    margin: 50px 50px;
+    z-index: 9;
+}
+
+#button-menu{
+    border-radius: 50%;
+    background: #FFF;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    /* top: 50%; */
+    left: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.line{
+    width: 25px;
+    height: 2.5px;
+    background-color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2.5px;
+    transition: all .1s ease-in-out;
+}
+
+.line::before{
+    content: '';
+    width: 25px;
+    height: 2.5px;
+    background-color: #333;
+    bottom: 7px;
+    position: absolute;
+    border-radius: 2.5px;
+    transition: all .2s .1s ease-in-out;
+}
+
+.line::after{
+    content: '';
+    width: 25px;
+    height: 2.5px;
+    background-color: #333;
+    top: 7px;
+    position: absolute;
+    border-radius: 2.5px;
+    transition: all .2s .1s ease-in-out;
+}
+
+#menu-box.buttonTriggered .line{
+    background-color: transparent;
+}
+
+#menu-box.buttonTriggered .line::before{
+    transform: translateY(7px) rotate(-45deg);
+}
+
+#menu-box.buttonTriggered .line::after{
+    transform: translateY(-7px) rotate(45deg);
+}
+
+.blob{
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: auto;
+}
+
+#blob-1{
+    transition: all .2s .1s ease-in-out;
+}
+
+#blob-2{
+    transition: all .2s .2s ease-in-out;
+}
+
+#blob-3{
+    transition: all .2s .3s ease-in-out;
+}
+
+#blob-4{
+    transition: all .2s .4s ease-in-out;
+}
+
+#menu-box.buttonTriggered #blob-1{
+    top: 0%;
+    left: 0%;
+}
+#menu-box.buttonTriggered #blob-2{
+    top: 50%;
+    left: 15%;
+}
+#menu-box.buttonTriggered #blob-3{
+    top: 85%;
+    left: 50%;
+}
+#menu-box.buttonTriggered #blob-4{
+    left: 100%;
+    top: 100%;
 }
 
 h1, p{
@@ -47,7 +157,7 @@ div{
 } */
 
 .box{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 929px;
     width: auto;
 }

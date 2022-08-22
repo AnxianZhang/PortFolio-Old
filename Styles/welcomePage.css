@@ -6,8 +6,12 @@
     /* border: rebeccapurple solid 2px; */
     width: 80%;
     padding: 0 20px;
-    margin: 225px auto;
+    /* margin: 225px auto; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
+    position: absolute;
     flex-wrap: wrap;
 }
 
