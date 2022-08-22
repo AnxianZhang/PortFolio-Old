@@ -20,12 +20,13 @@ body{
 }
 
 #menu-box{
+    /* border: #333 solid 2px; */
     float: right;
     position: sticky;
     width: 100px;
     height: 100px;
-    top: 30px;
-    margin: 50px 50px;
+    top: 50px;
+    margin: 70px 70px;
     z-index: 9;
 }
 
@@ -95,7 +96,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: auto;
+    /* z-index: auto; */
 }
 
 #blob-1{
@@ -152,10 +153,6 @@ div{
     display: block;
 }
 
-/* p {
-    margin-top: 0;
-} */
-
 .box{
     /* border: 2px solid red; */
     height: 929px;
@@ -165,6 +162,7 @@ div{
 .bg-color-size{
     padding: 0!important;
     height: 929px;
+    width: auto;
 }
 
 .first-color{
@@ -174,11 +172,4 @@ div{
 .second-color{
     background-color:rgb(238, 238, 238);
     /* border: black solid 2px; */
-}
-
-#test{
-    border: 2px solid red;
-    height: 500px;
-    width: 400px;
-    margin: 100px auto;
 }
