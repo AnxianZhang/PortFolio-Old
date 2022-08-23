@@ -1,0 +1,24 @@
+#skill-box{
+    border: rebeccapurple solid 2px;
+    width: 75%;
+    height: 400px;
+    padding: 0 20px;
+    /* margin: 225px auto; */
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+h2{
+    text-align: center;
+}
+
+#programation-box, #application-box, #soft-box{
+    border: yellowgreen 2px solid;
+    width: 300px;
+    margin: 0 50px;
+}
