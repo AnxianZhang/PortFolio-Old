@@ -1,5 +1,5 @@
 #skill-box{
-    border: rebeccapurple solid 2px;
+    /* border: rebeccapurple solid 2px; */
     width: 75%;
     height: 400px;
     padding: 0 20px;
@@ -18,7 +18,22 @@ h2{
 }
 
 #programation-box, #application-box, #soft-box{
-    border: yellowgreen 2px solid;
-    width: 300px;
-    margin: 0 50px;
+    border: rgb(197, 222, 255) 2px solid;
+    /* background-color: rgb(197, 222, 255); */
+    width: 20%;
+    height: 11%;
+    margin: auto;
+    border-radius: 50px;
+    transition: all .2s .1s ease-in-out;
+    /* margin: 0 50px; */
+
+}
+
+#programation-box:hover, #application-box:hover, #soft-box:hover{
+    background-color: #333;
+    height: 300px;
+}
+
+#programation-box:hover >h2, #application-box:hover >h2, #soft-box:hover >h2{
+    color: #f1f1f1;
 }

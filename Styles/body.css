@@ -134,19 +134,24 @@ body{
 }
 
 h1.title{
-    border: 2px green solid;
+    /* border: 2px green solid; */
     text-align: center;
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 h1, h2, p{
     font-family: 'Roboto';
-    color: rgb(65, 60, 60);
+    color: #333;
 }
 
 h1{
     font-size: 3em;
     line-height: 100%;
+    font-weight: 1;
+}
+
+h2{
+    font-size: 2em;
     font-weight: 80;
 }
 
