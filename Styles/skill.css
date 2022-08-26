@@ -4,7 +4,7 @@
     height: 400px;
     padding: 0 20px;
     /* margin: 225px auto; */
-    top: 150%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -23,17 +23,39 @@ h2{
     width: 20%;
     height: 11%;
     margin: auto;
+    
     border-radius: 50px;
     transition: all .2s .1s ease-in-out;
+    overflow: hidden;
     /* margin: 0 50px; */
-
 }
 
 #programation-box:hover, #application-box:hover, #soft-box:hover{
     background-color: #333;
     height: 300px;
+    padding: 20px 0px;
 }
 
 #programation-box:hover >h2, #application-box:hover >h2, #soft-box:hover >h2{
     color: #f1f1f1;
+    margin: 20px 0px;
+}
+
+#prog-web{
+    display: flex;
+    flex-wrap: wrap;
+    border: red 2px solid;
+}
+
+#prog-web p{
+    color: #f1f1f1;
+    visibility: hidden;
+    border: 2px red solid;
+    padding: 2px;
+    border-radius: 50px;
+    width: 3em;
+}
+
+#programation-box:hover >#prog-web p{
+    visibility: visible;
 }
