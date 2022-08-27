@@ -133,8 +133,24 @@ body{
     top: 100%;
 }
 
-h1.title{
+.content-box{
+    /* border: rebeccapurple solid 2px; */
+    width: 75%;
+    padding: 0 20px;
+    height: 400px;
+    /* margin: 225px auto; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.title{
     /* border: 2px green solid; */
+    height: 100px;
     text-align: center;
     margin-top: 100px;
 }
@@ -166,7 +182,7 @@ div{
 }
 
 .box{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 929px;
     width: auto;
     position: relative;

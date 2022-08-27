@@ -1,9 +1,9 @@
-#skill-box{
-    /* border: rebeccapurple solid 2px; */
+/* #skill-box{
+    border: rebeccapurple solid 2px;
     width: 75%;
     height: 400px;
     padding: 0 20px;
-    /* margin: 225px auto; */
+    margin: 225px auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -11,19 +11,36 @@
     position: absolute;
     flex-wrap: wrap;
     justify-content: space-around;
-}
+} */
 
 h2{
     text-align: center;
+    transition: all .2s .1s ease-in-out;
+}
+
+.title{
+    position: relative;
+}
+
+.title div{
+    width: 200px;
+    height: 2.5px;
+    border-radius: 50px;
+    background-color: rgb(134, 219, 240);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    position: absolute;
+    margin-top: 25px;
 }
 
 #programation-box, #application-box, #soft-box{
-    border: rgb(197, 222, 255) 2px solid;
+    border: rgb(134, 219, 240) 2px solid;
     /* background-color: rgb(197, 222, 255); */
-    width: 20%;
+    width: 350px;
     height: 11%;
     margin: auto;
-    
     border-radius: 50px;
     transition: all .2s .1s ease-in-out;
     overflow: hidden;
@@ -31,29 +48,33 @@ h2{
 }
 
 #programation-box:hover, #application-box:hover, #soft-box:hover{
-    background-color: #333;
+    background-color: rgb(134, 219, 240);
     height: 300px;
     padding: 20px 0px;
 }
 
 #programation-box:hover >h2, #application-box:hover >h2, #soft-box:hover >h2{
-    color: #f1f1f1;
-    margin: 20px 0px;
+    /* color: #f1f1f1; */
+    margin-bottom: 20px;
 }
 
 #prog-web{
     display: flex;
     flex-wrap: wrap;
-    border: red 2px solid;
+    /* border: red 2px solid; */
+    justify-content: center;
 }
 
 #prog-web p{
-    color: #f1f1f1;
+    color: #fff;
     visibility: hidden;
-    border: 2px red solid;
-    padding: 2px;
+    /* border: 2px orange solid; */
+    background-color: #aca8fb;
+    padding: 5px;
+    margin: 5px;
     border-radius: 50px;
-    width: 3em;
+    /* width: 3em; */
+    transition: all .2s .1s ease-in-out;
 }
 
 #programation-box:hover >#prog-web p{
