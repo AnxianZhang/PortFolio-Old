@@ -58,14 +58,14 @@ h2{
     margin-bottom: 20px;
 }
 
-#prog-web{
+.blop-box{
     display: flex;
     flex-wrap: wrap;
     /* border: red 2px solid; */
     justify-content: center;
 }
 
-#prog-web p{
+.blop-box p{
     color: #fff;
     visibility: hidden;
     /* border: 2px orange solid; */
@@ -77,6 +77,6 @@ h2{
     transition: all .2s .1s ease-in-out;
 }
 
-#programation-box:hover >#prog-web p{
+#programation-box:hover >.blop-box p, #application-box:hover >.blop-box p, #soft-box:hover > .blop-box p{
     visibility: visible;
 }
