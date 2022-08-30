@@ -13,7 +13,7 @@
     justify-content: space-around;
 } */
 
-h2{
+#programation-box h2, #application-box h2, #soft-box h2{
     text-align: center;
     transition: all .2s .1s ease-in-out;
 }
@@ -58,13 +58,6 @@ h2{
     margin-bottom: 20px;
 }
 
-.blop-box{
-    display: flex;
-    flex-wrap: wrap;
-    /* border: red 2px solid; */
-    justify-content: center;
-}
-
 .blop-box p{
     color: #fff;
     visibility: hidden;
@@ -76,7 +69,35 @@ h2{
     /* width: 3em; */
     transition: all .2s .1s ease-in-out;
 }
-
-#programation-box:hover >.blop-box p, #application-box:hover >.blop-box p, #soft-box:hover > .blop-box p{
+#programation-box:hover >.blop-box p, #application-box:hover .blop-box > p, #soft-box:hover .blop-box > p{
     visibility: visible;
 }
+
+.blop-box{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: red 2px solid; */
+    /* padding: 5px; */
+}
+
+.blop-box.center{
+    justify-content: center;
+}
+
+.blop-box h3{
+    /* border: red 2px solid; */
+    padding-top: 8px;
+}
+
+#content-in-app{
+    margin: 0px 15px;
+}
+
+/* #prog, #version-management, #three-D, #game-engine, #language{
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    visibility: hidden;
+} */
+
