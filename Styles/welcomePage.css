@@ -1,5 +1,5 @@
 #welcome-page{
-    background-image: url("../img/welcome-bg2.png");
+    background: url("../img/welcome-bg2.png") no-repeat fixed 50% 50%;
 }
 
 /* #content-box-box{
