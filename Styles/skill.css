@@ -23,22 +23,22 @@
 }
 
 .title div{
-    width: 200px;
-    height: 2.5px;
+    width: 12.5em;
+    height: 0.15625em;
     border-radius: 50px;
-    background-color: rgb(134, 219, 240);
+    background-color: rgb(134,219,240);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     position: absolute;
-    margin-top: 25px;
+    margin-top: 1.5625em;
 }
 
 #programation-box, #application-box, #soft-box{
-    border: rgb(134, 219, 240) 2px solid;
+    border: rgb(134,219,240) 2px solid;
     /* background-color: rgb(197, 222, 255); */
-    width: 350px;
+    width: 21.875em;
     height: 11%;
     margin: auto;
     border-radius: 50px;
@@ -48,14 +48,14 @@
 }
 
 #programation-box:hover, #application-box:hover, #soft-box:hover{
-    background-color: rgb(134, 219, 240);
-    height: 300px;
-    padding: 20px 0px;
+    background-color: rgb(134,219,240);
+    height: 18.75em;
+    padding: 1.25em 0px;
 }
 
 #programation-box:hover >h2, #application-box:hover >h2, #soft-box:hover >h2{
     /* color: #f1f1f1; */
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 
 .blop-box p{
@@ -63,8 +63,8 @@
     visibility: hidden;
     /* border: 2px orange solid; */
     background-color: #aca8fb;
-    padding: 5px;
-    margin: 5px;
+    padding: 0.3125em;
+    margin: 0.3125em;
     border-radius: 50px;
     /* width: 3em; */
     transition: all .2s .1s ease-in-out;
@@ -86,11 +86,11 @@
 
 .blop-box h3{
     /* border: red 2px solid; */
-    padding-top: 8px;
+    padding-top: 0.5em;
 }
 
 #content-in-app{
-    margin: 0px 15px;
+    margin: 0px 0.9375em;
 }
 
 /* #prog, #version-management, #three-D, #game-engine, #language{

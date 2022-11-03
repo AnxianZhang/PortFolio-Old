@@ -1,5 +1,6 @@
 #welcome-page{
     background: url("../img/welcome-bg2.png") no-repeat fixed 50% 50%;
+    background-size: cover;
 }
 
 /* #content-box-box{
@@ -15,41 +16,41 @@
     flex-wrap: wrap;
 } */
 
-#div-self-img{
-    width: 300px;
-    height: 400px;
+#div-self-img, #colored-box{
+        /* width: 300px;
+    height: 400px; */
+    width: 18.75em;
+    height: 25em;
     border-radius: 15px 50px 30px;
+    filter: drop-shadow(16px 16px 15px rgb(77, 77, 77));
+}
+
+#div-self-img{
     margin: 10px 0 0 50px;
     position: absolute;
     transform: rotate(15deg);
     z-index: 2;
     /* border: 2px solid black; */
     overflow: hidden;
-    filter: drop-shadow(16px 16px 15px rgb(77, 77, 77));
+}
+
+#colored-box{
+    background-color: rgb(134, 219, 240);
+    transform: rotate(6deg);
+    z-index: 0;
 }
 
 #div-self-img div{
     transform: rotate(-15deg) translate(-45px, -45px);
     border-radius: 15px 50px 30px;
-    /* border: 2px solid royalblue; */
     width: 400px;
-    height: 500px;
+    height: 31.25em;
 }
 
 #div-self-img div img{
-    width: 700px;
-    height: 475px;
+    width: 43.75em;
+    height: 29.6875em;
     transform: translate(-150px, 0px);
-}
-
-#colored-box{
-    width: 300px;
-    height: 400px;
-    border-radius: 15px 50px 30px;
-    background-color: rgb(134, 219, 240);
-    transform: rotate(6deg);
-    z-index: 0;
-    filter: drop-shadow(16px 16px 15px rgb(77, 77, 77));
 }
 
 #welcome-text-box{
@@ -60,8 +61,8 @@
 }
 
 #self-img-box{
-    width: 300px;
-    height: 400px;
+    width: 18.75em;
+    height: 25em;
     /* border: 2px aliceblue solid; */
-    margin: 0 100px 0 0;
+    margin-right: 6.25em;
 }

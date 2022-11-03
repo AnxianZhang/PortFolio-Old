@@ -1,6 +1,17 @@
-const menuBox = document.querySelector("#menu-box");
-const buttonMenu = document.querySelector("#button-menu");
+let menuBox;
+let buttonMenu;
 
-buttonMenu.addEventListener("click", () => {
-    menuBox.classList.toggle("buttonTriggered")
-});
+const addEvent = () =>{
+    buttonMenu.addEventListener("click", () => {
+        menuBox.classList.toggle("buttonTriggered");
+    });
+}
+
+const init = () =>{
+    menuBox = document.querySelector("#menu-box");
+    buttonMenu = document.querySelector("#button-menu");
+
+    addEvent();
+}
+
+window.addEventListener("DOMContentLoaded", init);
