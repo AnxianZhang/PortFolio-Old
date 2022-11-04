@@ -130,6 +130,23 @@ body{
     top: 100%;
 }
 
+.title{
+    position: relative;
+}
+
+.title div{
+    width: 12.5em;
+    height: 0.15625em;
+    border-radius: 50px;
+    background-color: rgb(134,219,240);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    position: absolute;
+    margin-top: 1.5625em;
+}
+
 .content-box{
     /* border: rebeccapurple solid 2px; */
     width: 75%;
@@ -180,13 +197,13 @@ p{
     font-weight: 100;
 }
 
-div{
+/* div{
     display: block;
-}
+} */
 
 .box{
     /* border: 2px solid red; */
-    height: 58.25em;
+    height: 52em;
     width: auto;
     position: relative;
 }

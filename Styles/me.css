@@ -1,0 +1,28 @@
+#me h2{
+    text-align: center;
+}
+
+#me .box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+#me .box > div{
+    padding: 1em;
+    border: 2px #f1f1f1 solid;
+    border-radius: 50px;
+    width: 45%;
+    height: 25em;
+}
+
+#me .box > div div{
+    /* border: 2px red solid; */
+    margin: 1em;
+}
+
+#me .box > div p{
+    padding-left: 2em;
+}
