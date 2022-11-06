@@ -2,3 +2,12 @@ github: https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTo
 nav2: https://www.iconfinder.com/icons/6900258/checklist_detail_list_menu_navigation_option_setting_icon
 welcom-bg*: https://bggenerator.com/poly_background.php
 accueil: https://www.flaticon.com/fr/icone-premium/accueil_3178402?term=accueil&page=1&position=54&page=1&position=54&related_id=3178402&origin=search
+
+Home icon: https://www.flaticon.com/free-icon/home_25694
+	--> credit to Dave Gandy
+Skill icon: https://www.flaticon.com/free-icon/skills_8870165?term=skill&page=1&position=6&page=1&position=6&related_id=8870165&origin=search
+	--> credit to manshagraphics
+Project icon: https://www.flaticon.com/free-icon/document_4341792?term=project&page=1&position=59&page=1&position=59&related_id=4341792&origin=search
+	--> credit to Icongeek26
+Me icon: https://www.flaticon.com/free-icon/user_800230?term=me&page=1&position=1&page=1&position=1&related_id=800230&origin=search
+	--> credit to Creative Stall Premium

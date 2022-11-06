@@ -16,8 +16,10 @@ body{
 }
 
 .icon{
-    width: 2.5em;
-    height: 2.5em;
+    width: 2.75em;
+    height: 2.75em;
+    /* background-color: #979FFB; */
+    border-radius: 50%;
 }
 
 #menu-box{
@@ -28,7 +30,7 @@ body{
     height: 6.5em;
     top: 3em;
     margin: 4em;
-    z-index: 9;
+    z-index: 20;
 }
 
 #button-menu{
@@ -213,6 +215,12 @@ p{
     height: 58.25em;
     width: auto;
 }
+
+.first-color,
+.second-color{
+    z-index: -10;
+}
+
 
 .first-color{
     background-color:rgb(197, 222, 255);

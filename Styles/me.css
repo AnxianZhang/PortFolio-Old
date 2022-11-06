@@ -11,11 +11,14 @@
 }
 
 #me .box > div{
+    /* position: relative; */
     padding: 1em;
     border: 2px #f1f1f1 solid;
+    /* background-color: grey; */
     border-radius: 50px;
     width: 45%;
     height: 25em;
+    z-index: 10;
 }
 
 #me .box > div div{
