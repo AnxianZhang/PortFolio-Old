@@ -1,0 +1,10 @@
+#all-projects{
+    width: 100%;
+    border: 2px solid red;
+    display: flex;
+    justify-content:space-around;
+}
+
+#all-projects > div{
+    border: white 2px solid;
+}
