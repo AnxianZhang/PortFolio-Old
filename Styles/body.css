@@ -149,12 +149,10 @@ body{
     margin-top: 1.5625em;
 }
 
-.content-box{
+.content-box, .larger-content-box{
     /* border: rebeccapurple solid 2px; */
-    width: 75%;
     padding: 0 20px;
     /* height: 400px; */
-    height: 25em;
     /* margin: 225px auto; */
     top: 50%;
     left: 50%;
@@ -163,6 +161,17 @@ body{
     position: absolute;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.content-box{
+    width: 75%;
+    height: 25em;
+}
+
+.larger-content-box{
+    /* border: red solid 2px; */
+    width: 90%;
+    height: 40em;
 }
 
 .title{
