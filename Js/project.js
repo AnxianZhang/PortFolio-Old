@@ -1,3 +1,13 @@
+// const makeImagesTransition = transistionTime =>{
+//     Array.from(document.querySelectorAll(".tab")).forEach(element =>{
+//         element.addEventListener("click", ()=>{
+//             Array.from(document.querySelectorAll(".larger-content-box img")).forEach(img =>{
+//                 img.style.transition = "all .0s 0s ease-in-out";
+//             });
+//         });
+//     });
+// };
+
 const addTabs = () =>{
     const tabs = document.querySelectorAll(".tab");
     const contents = document.querySelectorAll(".content");
@@ -34,4 +44,8 @@ const addTabs = () =>{
     });
 }
 
-window.addEventListener("DOMContentLoaded", addTabs);
+const initProject = () =>{
+    addTabs();
+}
+
+window.addEventListener("DOMContentLoaded", initProject);
