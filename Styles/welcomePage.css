@@ -1,16 +1,3 @@
-/* #content-box-box{
-    border: rebeccapurple solid 2px;
-    width: 75%;
-    padding: 0 20px;
-    margin: 225px auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    position: absolute;
-    flex-wrap: wrap;
-} */
-
 #div-self-img,
 #colored-box {
     /* width: 300px;
@@ -20,27 +7,6 @@
     border-radius: 15px 50px 30px;
     filter: drop-shadow(16px 16px 15px rgb(77, 77, 77));
 }
-
-
-/* @keyframes float {
-    0% {
-        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-        transform: translatey(0px);
-        transform: rotate(15deg);
-    }
-
-    50% {
-        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
-        transform: translatey(-40px);
-        transform: rotate(15deg);
-    }
-
-    100% {
-        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-        transform: translatey(0px);
-        transform: rotate(15deg);
-    }
-} */
 
 #div-self-img {
     margin: 10px 0 0 50px;
@@ -82,4 +48,82 @@
     height: 25em;
     /* border: 2px aliceblue solid; */
     margin-right: 6.25em;
+}
+
+:root {
+    --color-icon: #535c68;
+    --social-icon1: #333;
+    --social-icon2: #3b5999;
+}
+
+#contact-links {
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    position: absolute;
+    bottom: -3em;
+    left: 3.5em;
+    z-index: -10;
+}
+
+.icon-list {
+    width: 100%;
+    max-width: 50rem;
+    padding: 0 1.5rem;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.icon-item {
+    list-style: none;
+}
+
+.icon-link {
+    display: inline-flex;
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--color-icon);
+    width: 5rem;
+    height: 5rem;
+    transition: 0.5s linear;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+}
+
+.icon-link:hover {
+    color: #fff;
+}
+
+.icon-link i {
+    margin: auto;
+}
+
+.icon-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 5rem;
+    height: 5rem;
+    background: #000;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.3s cubic-bezier(0.95, 0.32, 0.37, 1.21);
+}
+
+.icon-link:hover::before {
+    transform: scale(1);
+}
+
+.icon-item:nth-child(1) a:hover:before {
+    background: var(--social-icon1);
+}
+
+.icon-item:nth-child(2) a:hover:before {
+    background: var(--social-icon2);
 }
