@@ -128,7 +128,7 @@
     background: var(--social-icon2);
 }
 
-#contact-links button{
+#contact-links button {
     align-self: center;
     border: none;
     border-radius: 10px;
@@ -140,16 +140,16 @@
     margin-right: 5em;
 }
 
-#contact-links button:hover{
+#contact-links button:hover {
     background-color: #666ed3;
 }
 
-#contact-links button h2{
+#contact-links button h2 {
     font-weight: bold;
     font-size: 1.15em;
     transition: all .2s 0s ease-in-out;
 }
 
-#contact-links button:hover h2{
+#contact-links button:hover h2 {
     color: #f1f1f1;
 }
