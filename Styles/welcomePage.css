@@ -33,7 +33,7 @@
 #div-self-img div img {
     width: 43.75em;
     height: 29.6875em;
-    transform: translate(-150px, 0px);
+    transform: translate(-15em, .25em);
 }
 
 #welcome-text-box {
