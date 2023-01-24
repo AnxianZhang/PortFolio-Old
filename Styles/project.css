@@ -159,3 +159,21 @@
     color: #f1f1f1;
     font-weight: bold;
 }
+
+/* ---------- */
+
+#project .container{
+    /* border: red solid 2px; */
+    height: 40em;
+    overflow: auto;
+}
+
+@media screen and (max-width: 1650px) {
+    #project .container{
+        /* border: solid green 2px; */
+    }
+
+    .current-project-content > div, #project .content > div{
+        margin-top: 2em;
+    }
+}

@@ -57,13 +57,14 @@
 }
 
 #contact-links {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     /* align-items: center; */
     /* justify-content: center; */
+    /* width: 50%; */
     position: absolute;
-    bottom: -3em;
-    left: 3.5em;
+   bottom: 0;
+    left: 0; 
     z-index: -10;
 }
 
@@ -152,4 +153,57 @@
 
 #contact-links button:hover h2 {
     color: #f1f1f1;
+}
+
+
+
+
+#welcome .content-box{
+    /* border: red 2px solid; */
+}
+
+#welcome-text-box {
+    /* border: blue 2px solid; */
+}
+
+@media screen and (max-width: 1450px) {
+    #welcome .content-box{
+        width: 100%;
+        height: 30em;
+    }
+}
+@media screen and (max-width: 1050px) {
+    #welcome .content-box{
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    #self-img-box, #div-self-img, #colored-box {
+        width: 12.125em;
+        height: 17.5em;
+        /* border: 2px aliceblue solid; */
+        margin-right: 6.25em;
+    }
+
+    #div-self-img, #colored-box {
+        border-radius: 10.5px 35px 21px;
+    }
+
+    #div-self-img div img {
+        transform: translate(-17em, .25em);
+    }
+
+    #welcome-text-box h1{
+        text-align: center;
+    }
+    #contact-links {
+        /* bottom: -1em; */
+        /* position: absolute; */
+        transform: translate(-50%, -50%);
+        bottom: -20%;
+        left: 50%;
+        /* display: flex; */
+        align-items: center;
+    }
 }
