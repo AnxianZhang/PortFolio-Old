@@ -247,4 +247,14 @@ p{
     h1{
         font-size: 2em;
     }
+
+    h2:not(#skill h2){
+        font-size: 1.35em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    h1{
+        font-size: 1.5em;
+    }
 }

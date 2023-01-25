@@ -37,17 +37,20 @@
 }
 
 #welcome-text-box {
-    display: block;
+    display: flex;
+    /* align-items:; */
+    flex-direction: column;
+    justify-content: space-around;
     /* border: pink solid 2px; */
     width: 60%;
-    margin: auto;
+    /* margin: auto; */
 }
 
 #self-img-box {
     width: 18.75em;
     height: 25em;
     /* border: 2px aliceblue solid; */
-    margin-right: 6.25em;
+    margin-right: 10%;
 }
 
 :root {
@@ -62,16 +65,16 @@
     /* align-items: center; */
     /* justify-content: center; */
     /* width: 50%; */
-    position: absolute;
-   bottom: 0;
-    left: 0; 
+    /* position: absolute;
+    bottom: 0;
+    left: 0;  */
     z-index: -10;
 }
 
 .icon-list {
     width: 100%;
     max-width: 50rem;
-    padding: 0 1.5rem;
+    /* padding: 0 1.5rem; */
     display: flex;
     /* justify-content: space-between; */
 }
@@ -138,7 +141,7 @@
     cursor: pointer;
     background-color: #9299FD;
     transition: all .2s 0s ease-in-out;
-    margin-right: 5em;
+    /* margin-right: 5em; */
 }
 
 #contact-links button:hover {
@@ -177,13 +180,14 @@
         flex-direction: column-reverse;
         flex-wrap: nowrap;
         align-items: center;
+        height: 40em;
     }
 
     #self-img-box, #div-self-img, #colored-box {
         width: 12.125em;
         height: 17.5em;
         /* border: 2px aliceblue solid; */
-        margin-right: 6.25em;
+        /* margin-right: 6.25em; */
     }
 
     #div-self-img, #colored-box {
@@ -194,16 +198,25 @@
         transform: translate(-17em, .25em);
     }
 
+    #welcome-text-box{
+        align-items: center;
+    }
+
     #welcome-text-box h1{
         text-align: center;
     }
-    #contact-links {
-        /* bottom: -1em; */
-        /* position: absolute; */
-        transform: translate(-50%, -50%);
-        bottom: -20%;
-        left: 50%;
-        /* display: flex; */
-        align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+    #welcome-text-box{
+        width: 90%;
+    }
+
+    #welcome .content-box{
+        height: 37.5em;
+    }
+
+    #welcome-text-box{
+        height: 12.5em;
     }
 }
