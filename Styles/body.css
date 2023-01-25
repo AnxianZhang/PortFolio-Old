@@ -224,7 +224,7 @@ p{
     position: relative;
 }
 
-.bg-color-size{
+.bg-color-size:not(#welcome.bg-color-size){
     padding: 0!important;
     height: 60em;
     width: auto;
