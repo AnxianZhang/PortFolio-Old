@@ -19,6 +19,7 @@
     background-color: rgb(134,219,240);
     height: 18.75em;
     padding: 1.25em 0px;
+    /* overflow: auto; */
 }
 
 #programation-box:hover >h2, #application-box:hover >h2, #soft-box:hover >h2{
@@ -59,4 +60,10 @@
 
 .content-in-app{
     margin: 0px 0.9375em;
+}
+
+@media screen and (max-width: 520px) {
+    #skill .content-box{
+        width: 100%;
+    }
 }

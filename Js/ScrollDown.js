@@ -1,6 +1,16 @@
-// $(function() {
-//     $('#section10 a').on('click', function(e) {
-//       e.preventDefault();
-//       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-//     });
-//   });
+// $(window).ready(()=>{
+//     $("#skill .content-box > div").hover(
+//         function (){
+//             $(this).children("h2").attr("id", "top");
+//             $("body").append("<a href=#top id = 'tmp'></a>");
+//             // alert("hello");
+//         },
+//         function (){
+//             $("a#tmp").click();
+            
+//             $(this).children("h2").attr("id", "");
+//             // $(this).children("h2").attr("href", "");
+//             // alert("leave");
+//         }
+//     );
+// });

@@ -7,7 +7,7 @@
     /* border: white 2px solid; */
     width: 50%;
     max-width: 50%;
-    z-index: 10;
+    /* z-index: 10; */
 }
 
 .content>div,
@@ -62,19 +62,21 @@
     align-items: center;
 }
 
-.content {
+.content, .onOne .container {
     position: absolute;
     /* border: solid red 2px; */
     visibility: hidden;
 }
 
-.active {
+.active,
+.active-tab-project {
     background: #86DBF0;
     border-radius: 5px;
     transition: all .2s 0s ease-in-out;
 }
 
-.active-content {
+.active-content,
+.active-container {
     animation: fade .5s forwards;
     /* transition: all .2s 0s ease-in-out; */
 }
@@ -162,18 +164,19 @@
 
 /* ---------- */
 
-#project .container{
+#project .container {
     /* border: red solid 2px; */
     height: 40em;
     overflow: auto;
 }
 
 @media screen and (max-width: 1650px) {
-    #project .container{
+    #project .container {
         /* border: solid green 2px; */
     }
 
-    .current-project-content > div, #project .content > div{
+    .current-project-content>div,
+    #project .content>div {
         margin-top: 2em;
     }
 }
