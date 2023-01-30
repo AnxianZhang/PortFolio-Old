@@ -1,8 +1,16 @@
-const addTabs = () => {
-    const tabs = document.querySelectorAll(".tab");
-    const contents = document.querySelectorAll(".content");
+let currLang;
 
-    let idx;
+const addTabs = () => {
+    let langType;
+    let langContent;
+    const tabs = document.querySelectorAll(".tab");
+    langContent = document.querySelectorAll(".content");
+
+    langContent.forEach(content => {
+        if (content.getAttribute("data-tab") == 1) { // 1 ==> web (le champ de départ)
+            currLang = content;
+        }
+    });
 
     tabs.forEach(tab => {
         tab.addEventListener("click", () => {
@@ -13,19 +21,21 @@ const addTabs = () => {
                 tab.classList.add('active');
             }
 
-            idx = tab.getAttribute('data-tab');
+            langType = tab.getAttribute('data-tab');
 
-            for (let j = 0; j < contents.length; ++j) {
-                if (contents[j].getAttribute("data-tab") != idx) {
-                    contents[j].classList.remove("active-content");
+            for (let j = 0; j < langContent.length; ++j) {
+                if (langContent[j].getAttribute("data-tab") != langType) {
+                    langContent[j].classList.remove("active-content");
                 }
                 else {
-                    contents[j].classList.add("active-content");
+                    langContent[j].classList.add("active-content");
+                    console.log(langContent[j]);
+                    currLang = langContent[j];
                 }
             }
 
             for (let i = 0; i < tabs.length; ++i) {
-                if (tabs[i].getAttribute("data-tab") != idx && tabs[i].classList.contains("active")) {
+                if (tabs[i].getAttribute("data-tab") != langType && tabs[i].classList.contains("active")) {
                     tabs[i].classList.remove("active");
                     return;
                 }
@@ -71,6 +81,13 @@ const makeOnlyATypeOfProjectVisible = () => {
                     }
                     else {
                         tab.classList.add('active-tab-project');
+                    }
+
+                    if (tab.textContent == "En cours") {
+                        currLang.classList.remove("active-content");
+                    }
+                    else {
+                        currLang.classList.add("active-content");
                     }
 
                     idx = tab.getAttribute('data-project');
