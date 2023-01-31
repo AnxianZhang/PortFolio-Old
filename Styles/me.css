@@ -1,8 +1,8 @@
-#me h2{
+#me h2 {
     text-align: center;
 }
 
-#me .box{
+#me .box {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -10,7 +10,7 @@
     /* flex-direction: column; */
 }
 
-#me .box > div{
+#me .box>div {
     /* position: relative; */
     padding: 1em;
     border: 2px #f1f1f1 solid;
@@ -21,11 +21,25 @@
     z-index: 10;
 }
 
-#me .box > div div{
+#me .box>div div {
     /* border: 2px red solid; */
     margin: 1em;
 }
 
-#me .box > div p{
+#me .box>div p {
     padding-left: 2em;
+}
+
+@media screen and (max-width: 650px) {
+    #me .box {
+        flex-direction: column;
+        /* width: ; */
+
+    }
+
+    #me .box > div{
+        /* border: red 2px solid; */
+        width: 80%;
+        height: 16em;
+    }
 }
