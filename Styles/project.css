@@ -157,6 +157,18 @@
     filter: drop-shadow(2.5px 2.5px 2.5px rgb(77, 77, 77));
 }
 
+#project .title div{
+    margin-top: 0;
+}
+
+#project .title{
+    /* border: 2px green solid; */
+    height: 7em;
+    text-align: center;
+    top: 50px;
+}
+
+
 .ticket-language p {
     color: #f1f1f1;
     font-weight: bold;
@@ -168,6 +180,14 @@
     /* border: red solid 2px; */
     height: 40em;
     overflow: auto;
+}
+
+section.bg-color-size{
+    height: 53.5em !important;
+}
+
+#project .box{
+    height: 45em;
 }
 
 @media screen and (max-width: 1650px) {
