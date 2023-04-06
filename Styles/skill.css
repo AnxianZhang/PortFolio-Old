@@ -1,69 +1,143 @@
-#programation-box h2, #application-box h2, #soft-box h2{
+#programation-box h2,
+#application-box h2,
+#soft-box h2 {
     text-align: center;
     transition: all .2s .1s ease-in-out;
+    margin-bottom: .5em;
 }
 
-#programation-box, #application-box, #soft-box{
-    border: rgb(134,219,240) 2px solid;
+#programation-box,
+#application-box,
+#soft-box {
+    border: rgb(134, 219, 240) 2px solid;
     /* background-color: rgb(197, 222, 255); */
     width: 26.4em;
-    height: 11%;
+    /* height: 11%; */
+    height: 18.75em;
+    background-color: rgb(134, 219, 240);
+
     margin: auto;
     border-radius: 50px;
-    transition: all .2s .1s ease-in-out;
     overflow: hidden;
     /* margin: 0 50px; */
+    opacity: 0;
+    transition: all 1s 0s ease-in-out;
+    filter: blur(5px);
+    transform: translateX(-100%);
 }
 
-#programation-box:hover, #application-box:hover, #soft-box:hover{
+#skill .content-box>div.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+#programation-box {
+    transition-delay: 200ms;
+}
+
+#application-box {
+    transition-delay: 400ms;
+}
+
+#soft-box {
+    transition-delay: 600ms;
+}
+
+/* #programation-box:hover, #application-box:hover, #soft-box:hover{
     background-color: rgb(134,219,240);
     height: 18.75em;
     padding: 1.25em 0px;
-    /* overflow: auto; */
-}
+    overflow: auto;
+} */
 
-#programation-box:hover >h2, #application-box:hover >h2, #soft-box:hover >h2{
-    /* color: #f1f1f1; */
+/* #programation-box:hover >h2, #application-box:hover >h2, #soft-box:hover >h2{
+    color: #f1f1f1;
     margin-bottom: 1.25em;
-}
+} */
 
-.blop-box p{
+.blop-box p {
     color: #fff;
-    visibility: hidden;
+    /* visibility: hidden; */
     /* border: 2px orange solid; */
     background-color: #aca8fb;
     padding: 0.3125em;
     margin: 0.3125em;
     border-radius: 50px;
     /* width: 3em; */
-    transition: all .2s .1s ease-in-out;
-}
-#programation-box:hover .blop-box > p, #application-box:hover .blop-box > p, #soft-box:hover .blop-box > p{
-    visibility: visible;
+    transition: all 2s .1s ease-in-out;
 }
 
-.blop-box{
+/* #programation-box:hover .blop-box > p, #application-box:hover .blop-box > p, #soft-box:hover .blop-box > p{
+    visibility: visible;
+} */
+
+.blop-box {
     display: flex;
     flex-wrap: wrap;
     /* border: red 2px solid; */
     /* padding: 5px; */
 }
 
-.blop-box.center{
+.blop-box.center {
     justify-content: center;
 }
 
-.blop-box h3{
+.blop-box h3 {
     /* border: red 2px solid; */
     padding-top: 0.5em;
 }
 
-.content-in-app{
+.content-in-app {
     margin: 0px 0.9375em;
 }
 
-@media screen and (max-width: 520px) {
-    #skill .content-box{
+@media screen and (max-width: 1750px) {
+    #skill .content-box {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    #programation-box:hover .blop-box>p,
+    #application-box:hover .blop-box>p,
+    #soft-box:hover .blop-box>p {
+        visibility: visible;
+    }
+
+    #programation-box h2,
+    #application-box h2,
+    #soft-box h2 {
+        margin-bottom: 0em;
+    }
+
+    #programation-box,
+    #application-box,
+    #soft-box {
+        background-color: transparent;
+        height: 11%;
+        transition: all .2s .1s ease-in-out;
+        overflow: hidden;
+        /* Hide scrollbars */
+    }
+
+    #programation-box:hover,
+    #application-box:hover,
+    #soft-box:hover {
+        background-color: rgb(134, 219, 240);
+        height: 18.75em;
+        padding: 1.25em 0px;
+        /* overflow: auto; */
+    }
+
+    #programation-box:hover>h2,
+    #application-box:hover>h2,
+    #soft-box:hover>h2 {
+        /* color: #f1f1f1; */
+        margin-bottom: 1.25em;
+    }
+
+    .blop-box p {
+        transition: all .2s .1s ease-in-out;
     }
 }

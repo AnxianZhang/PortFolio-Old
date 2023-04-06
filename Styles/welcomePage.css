@@ -38,6 +38,8 @@
     /* width: 43.75em;
     height: 29.6875em; */
     transform: translate(-6.5em, -8em);
+    background-position: center;
+
 }
 
 #welcome-text-box {
@@ -276,7 +278,7 @@
     }
 
     #div-self-img div img {
-        transform: translate(-17em, .25em);
+        transform: translate(-9em, -10em);
     }
 
     #welcome-text-box{
