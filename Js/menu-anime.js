@@ -1,17 +1,17 @@
-let menuBox;
-let buttonMenu;
+// let menuBox;
+// let buttonMenu;
 
-const addEvent = () =>{
-    buttonMenu.addEventListener("click", () => {
-        menuBox.classList.toggle("buttonTriggered");
-    });
-}
+// const addEvent = () =>{
+//     buttonMenu.addEventListener("click", () => {
+//         menuBox.classList.toggle("buttonTriggered");
+//     });
+// }
 
-const init = () =>{
-    menuBox = document.querySelector("#menu-box");
-    buttonMenu = document.querySelector("#button-menu");
+// const init = () =>{
+//     menuBox = document.querySelector("#menu-box");
+//     buttonMenu = document.querySelector("#button-menu");
 
-    addEvent();
-}
+//     addEvent();
+// }
 
-window.addEventListener("DOMContentLoaded", init);
+// window.addEventListener("DOMContentLoaded", init);

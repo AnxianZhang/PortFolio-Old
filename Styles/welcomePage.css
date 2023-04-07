@@ -1,4 +1,4 @@
-#welcome.bg-color-size{
+#welcome.bg-color-size {
     min-height: 100vh;
 }
 
@@ -165,115 +165,130 @@
 }
 
 #section10 a {
-	padding-top: 60px;
+    padding-top: 60px;
 }
+
 #section10 a span {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 30px;
-	height: 50px;
-	margin-left: -15px;
-	border: 2px solid #333;
-	border-radius: 50px;
-	box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid #333;
+    border-radius: 50px;
+    box-sizing: border-box;
 }
+
 #section10 a span::before {
-	position: absolute;
-	top: 10px;
-	left: 50%;
-	content: "";
-	width: 6px;
-	height: 6px;
-	margin-left: -3px;
-	background-color: #333;
-	border-radius: 100%;
-	-webkit-animation: sdb10 2s infinite;
-	animation: sdb10 2s infinite;
-	box-sizing: border-box;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: "";
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #333;
+    border-radius: 100%;
+    -webkit-animation: sdb10 2s infinite;
+    animation: sdb10 2s infinite;
+    box-sizing: border-box;
 }
+
 @-webkit-keyframes sdb10 {
-	0% {
-		-webkit-transform: translate(0, 0);
-		opacity: 0;
-	}
-	40% {
-		opacity: 1;
-	}
-	80% {
-		-webkit-transform: translate(0, 20px);
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
+    0% {
+        -webkit-transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: translate(0, 20px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
+
 @keyframes sdb10 {
-	0% {
-		transform: translate(0, 0);
-		opacity: 0;
-	}
-	40% {
-		opacity: 1;
-	}
-	80% {
-		transform: translate(0, 20px);
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        transform: translate(0, 20px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 #welcome section::after {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	content: "";
-	width: 100%;
-	/* height: 80%; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    /* height: 80%; */
 }
 
 .demo a {
-	position: absolute;
-	bottom: 20px;
-	left: 50%;
-	z-index: 2;
-	display: inline-block;
-	-webkit-transform: translate(0, -50%);
-	transform: translate(0, -50%);
-	color: #fff;
-	font: normal 400 20px/1 "Josefin Sans", sans-serif;
-	letter-spacing: 0.1em;
-	text-decoration: none;
-	transition: opacity 0.3s;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font: normal 400 20px/1 "Josefin Sans", sans-serif;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    transition: opacity 0.3s;
 }
+
 .demo a:hover {
-	opacity: 0.5;
+    opacity: 0.5;
 }
 
 @media screen and (max-width: 1450px) {
-    #welcome .content-box{
+    #welcome .content-box {
         width: 100%;
         height: 30em;
     }
 }
+
 @media screen and (max-width: 1050px) {
-    #welcome .content-box{
+    #welcome .content-box {
         flex-direction: column-reverse;
         flex-wrap: nowrap;
         align-items: center;
         height: 40em;
     }
 
-    #self-img-box, #div-self-img, #colored-box {
+    #self-img-box,
+    #div-self-img,
+    #colored-box {
         width: 12.125em;
         height: 17.5em;
         /* border: 2px aliceblue solid; */
         /* margin-right: 6.25em; */
     }
 
-    #div-self-img, #colored-box {
+    #div-self-img,
+    #colored-box {
         border-radius: 10.5px 35px 21px;
     }
 
@@ -281,25 +296,25 @@
         transform: translate(-9em, -10em);
     }
 
-    #welcome-text-box{
+    #welcome-text-box {
         align-items: center;
     }
 
-    #welcome-text-box h1{
+    #welcome-text-box h1 {
         text-align: center;
     }
 }
 
 @media screen and (max-width: 650px) {
-    #welcome-text-box{
+    #welcome-text-box {
         width: 90%;
     }
 
-    #welcome .content-box{
+    #welcome .content-box {
         height: 37.5em;
     }
 
-    #welcome-text-box{
+    #welcome-text-box {
         height: 12.5em;
     }
 }

@@ -74,7 +74,7 @@ const makeOnlyATypeOfProjectVisible = () => {
             }
 
             tabProject.forEach(tab => {
-                tab.addEventListener("click", () => {
+                tab.addEventListener("click", function tabHandler() {
                     // alert("yas");
                     if (tab.classList.contains("active-tab-project")) {
                         return;
@@ -110,15 +110,16 @@ const makeOnlyATypeOfProjectVisible = () => {
                 });
             });
         }
-
         else if (window.innerWidth > 900) {
             document.querySelector("#project").classList.remove("onOne");
             document.querySelector("#line-separator").style.display = "block";
             for (let i = 0; i < containerContent.length; ++i) {
                 notAbsolute(containerContent[i]);
-
                 // tabProject[i].removeEventListener("click");
             }
+            // tabProject.forEach(tab =>{
+            //     tab.removeEventListener("click", tabHandler);
+            // });
         }
     });
 

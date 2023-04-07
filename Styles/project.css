@@ -62,7 +62,8 @@
     align-items: center;
 }
 
-.content, .onOne .container {
+.content,
+.onOne .container {
     position: absolute;
     /* border: solid red 2px; */
     visibility: hidden;
@@ -160,11 +161,11 @@
     filter: drop-shadow(2.5px 2.5px 2.5px rgb(77, 77, 77));
 }
 
-#project .title div{
+#project .title div {
     margin-top: 0;
 }
 
-#project .title{
+#project .title {
     /* border: 2px green solid; */
     height: 7em;
     text-align: center;
@@ -185,19 +186,15 @@
     overflow: auto;
 }
 
-section.bg-color-size{
+section.bg-color-size {
     height: 53.5em !important;
 }
 
-#project .box{
+#project .box {
     height: 45em;
 }
 
 @media screen and (max-width: 1650px) {
-    #project .container {
-        /* border: solid green 2px; */
-    }
-
     .current-project-content>div,
     #project .content>div {
         margin-top: 2em;
