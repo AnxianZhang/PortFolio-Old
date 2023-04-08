@@ -74,7 +74,7 @@ const makeOnlyATypeOfProjectVisible = () => {
             }
 
             tabProject.forEach(tab => {
-                tab.addEventListener("click", function tabHandler() {
+                tab.addEventListener("click", ()=>{
                     // alert("yas");
                     if (tab.classList.contains("active-tab-project")) {
                         return;

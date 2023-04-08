@@ -38,6 +38,10 @@ body {
     margin: 0 !important;
 }
 
+/* body > section{
+    position: relative;
+} */
+
 .icon {
     width: 2.75em;
     height: 2.75em;
