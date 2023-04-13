@@ -122,8 +122,6 @@ const makeOnlyATypeOfProjectVisible = () => {
             // });
         }
     });
-
-
 }
 
 const initProject = () => {

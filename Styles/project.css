@@ -1,3 +1,7 @@
+#project{
+    position: relative;
+    z-index: 20;
+}
 .larger-content-box h2 {
     text-align: center;
     margin-bottom: 1em;
@@ -10,7 +14,7 @@
     /* z-index: 10; */
 }
 
-.content>div,
+.content>div:not(.overlay),
 .current-project-content>div {
     /* .larger-content-box > div > div:not(.container){ */
     /* border: solid white 2px; */
@@ -98,16 +102,87 @@
     color: black;
 } */
 
+.larger-content-box a{
+    width: 100%;
+    height: 100%;
+}
+
 .larger-content-box img {
     object-fit: cover;
     width: 100%;
-    width: 100%;
+    height: 100%;
     z-index: -10;
     /* transform: translate(-em, -4em); */
     opacity: 1;
     /* transition: all .2s 0s ease-in-out; */
 }
+/* ======================================== NEW ================================================ */
+.overlay{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: opacity .4s;
+    background: rgba(0, 0, 0, .7);
+    visibility: hidden;
+    opacity: 0;
+    height: 100%;
+}
 
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+    /* z-index: 100; */
+}
+
+.show-project{
+    margin: 6rem auto;
+    padding: 3rem;
+    background: #fff;
+    border-radius: 5px;
+    width: 50%;
+    /* position: relative; */
+    transition: all .4s ease-in-out;
+    position: relative;
+
+}
+
+.show-project > h2{
+    margin-bottom: 1em;
+}
+
+.show-project .cross{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s ease;
+    color: #333;
+}
+
+.show-project .cross:hover{
+    color: #91A3F9;
+}
+
+.gif{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+iframe, .gif > img{
+    max-width: 100%;
+    /* height: 80%; */
+    margin-bottom: 1em;
+}
+
+/* ======================================== NEW ================================================ */
+
+
+/* ======================================== OLD ================================================ */
 .details {
     width: 22.5em;
     height: 16.125em;
@@ -135,6 +210,7 @@
 .details:hover {
     opacity: 1;
 }
+/* ======================================== OLD ================================================ */
 
 #project #line-separator {
     transform: translateY(4em);
