@@ -178,7 +178,9 @@
 .gif {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 1em;
 }
 
 iframe,
